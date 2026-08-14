@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  smart-campus-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+      - "3000:3000"
+    environment:
+      - PORT=5000
+      - SMTP_USER=manimegalaisenguttuvan1009@gmail.com
+      - SMTP_PASS=scxz fudn cejg yhbz
+    restart: always
